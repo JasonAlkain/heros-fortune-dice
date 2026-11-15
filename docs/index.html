@@ -8,15 +8,21 @@
     <title>Hero’s Fortune · A little luck goes a long way</title>
     <meta name="description" content="An adjustable, transparent luck-based dice roller for tabletop adventures.">
     <script src="theme.js?v=f39b59222ed9"></script>
-    <link rel="stylesheet" href="style.css?v=690c2f741764">
+    <link rel="stylesheet" href="style.css?v=607e64af8325">
+    <script src="navigation.js?v=d73ec4e898df" defer></script>
 </head>
 
 <body>
-    <header><div class="brand-nav"><a class="brand" href="./"><span class="brand-icon">✧</span> HERO’S FORTUNE</a><nav aria-label="Main navigation"><a class="nav-link" href="how-it-works.html">How it works</a></nav></div><span class="header-note">FOR
-            THE STORIES WORTH TELLING</span>
-        <div class="header-controls"><span class="house">HOUSE RULE ROLLER</span><button id="themeToggle"
-                class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false"><span
-                    aria-hidden="true">◐</span> Dark theme</button></div>
+    <header>
+        <div class="brand-nav">
+            <a class="brand" href="./"><span class="brand-icon">✧</span> HERO’S FORTUNE</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="nav-link" href="how-it-works.html">How it works</a>
+                <details class="site-menu"><summary class="nav-link">More <span aria-hidden="true">⌄</span></summary><div class="site-menu-links"><a href="ai-disclosure.html">AI disclosure</a><a href="privacy.html">Privacy & saved data</a><a href="updates.html">Updates & roadmap</a><a href="about.html">About & feedback</a></div></details>
+            </nav>
+        </div>
+        <span class="header-note">FOR THE STORIES WORTH TELLING</span>
+        <div class="header-controls"><span class="house">HOUSE RULE ROLLER</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false"><span aria-hidden="true">◐</span> Dark theme</button></div>
     </header>
     <main>
         <div class="intro">
@@ -87,8 +93,7 @@
             </div>
             <div id="history"></div>
         </section>
-        <footer>HERO’S FORTUNE <span>Let the dice surprise you.</span><span>UNOFFICIAL TABLETOP TOOL · NOT AFFILIATED
-                WITH D&D</span></footer>
+        <footer class="site-footer"><div class="footer-top"><a class="footer-home" href="./">HERO’S FORTUNE</a><nav class="footer-links" aria-label="Footer navigation"><a href="ai-disclosure.html">AI disclosure</a><a href="privacy.html">Privacy</a><a href="about.html">About & feedback</a><a href="https://github.com/JasonAlkain/heros-fortune-dice">GitHub</a></nav></div><p class="footer-note">UNOFFICIAL TABLETOP TOOL · NOT AFFILIATED WITH DUNGEONS & DRAGONS OR WIZARDS OF THE COAST</p></footer>
     </main>
     <script src="core.js?v=a8784c1410c3"></script>
     <script src="app.js?v=8102662a9580"></script>
