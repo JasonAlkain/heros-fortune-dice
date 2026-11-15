@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#171b19">
+    <title>How it works · Hero’s Fortune</title>
+    <meta name="description" content="Learn to set up actions, read dice rolls, choose a luck level, and understand your odds in Hero’s Fortune.">
+    <script src="theme.js?v=f39b59222ed9"></script>
+    <link rel="stylesheet" href="style.css?v=690c2f741764">
+</head>
+<body>
+    <a class="skip-link" href="#guide">Skip to guide</a>
+    <header>
+        <div class="brand-nav">
+            <a class="brand" href="./"><span class="brand-icon">✧</span> HERO’S FORTUNE</a>
+            <nav aria-label="Main navigation"><a class="nav-link" href="how-it-works.html" aria-current="page">How it works</a></nav>
+        </div>
+        <span class="header-note">FOR THE STORIES WORTH TELLING</span>
+        <div class="header-controls">
+            <span class="house">HOUSE RULE ROLLER</span>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false"><span aria-hidden="true">◐</span> Dark theme</button>
+        </div>
+    </header>
+    <main id="guide" class="guide-main">
+        <div class="guide-intro">
+            <p class="eyebrow">A QUICK GUIDE FOR YOUR FIRST ADVENTURE</p>
+            <h1>Your dice.<br>Understood.</h1>
+            <p class="sub">Build a tray of actions, choose your luck, and see exactly how each roll happened.</p>
+            <a class="guide-cta" href="./">Open the roller <span aria-hidden="true">↗</span></a>
+        </div>
+        <nav class="guide-jumps" aria-label="Guide sections">
+            <a href="#first-roll">First roll</a><a href="#dice-notation">Dice notation</a><a href="#luck">Luck levels</a><a href="#modes">Roll modes</a><a href="#odds">Reading odds</a><a href="#saved-data">Saved data</a>
+        </nav>
+        <section id="first-roll" class="panel guide-section" aria-labelledby="firstHeading">
+            <p class="eyebrow">01 / GET STARTED</p>
+            <h2 id="firstHeading">Make your first roll</h2>
+            <ol class="guide-steps">
+                <li><strong>Name an action.</strong> Use an existing row or choose <strong>+ Add action</strong>. Try “Sword attack,” “Damage,” or “Stealth.”</li>
+                <li><strong>Set the dice.</strong> Choose the count, die type, modifier, and mode. For an attack, try Count <strong>1</strong>, Die <strong>d20</strong>, Modifier <strong>5</strong>, and Mode <strong>Normal</strong>.</li>
+                <li><strong>Choose your luck.</strong> Start with <strong>Fair</strong>. The selected luck level applies to every action row.</li>
+                <li><strong>Select Roll.</strong> The large number is the total. Open <strong>Roll details</strong> to inspect the candidate dice and kept results.</li>
+            </ol>
+            <div class="guide-example"><span class="guide-example-label">EXAMPLE RESULT · 1d20 + 5</span><p><strong>A die result of 14 + a modifier of 5 = a total of 19.</strong></p><p>The modifier is added once to the action total.</p></div>
+            <p><strong>Roll all</strong> rolls every row independently. It does not combine rows, check whether an attack hit, or decide when damage should apply. Use the individual Roll buttons when one action depends on another.</p>
+            <p class="guide-fine">You can keep up to 20 actions, with 1–10 dice in each row. Remove a row with its Remove button.</p>
+        </section>
+        <section id="dice-notation" class="panel guide-section" aria-labelledby="notationHeading">
+            <p class="eyebrow">02 / READ THE DICE</p>
+            <h2 id="notationHeading">What does “2d6 + 3” mean?</h2>
+            <p>The first number is how many dice to roll. The number after “d” is how many sides each die has. The final number is a bonus or penalty to the total.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><caption>Common dice expressions</caption><thead><tr><th scope="col">Expression</th><th scope="col">What happens</th><th scope="col">Example</th></tr></thead><tbody>
+                <tr><th scope="row">1d20 + 5</th><td>Roll one 20-sided die; add 5.</td><td>14 + 5 = 19</td></tr>
+                <tr><th scope="row">2d6 + 3</th><td>Roll two 6-sided dice; add 3 once.</td><td>4 + 5 + 3 = 12</td></tr>
+                <tr><th scope="row">1d8 − 2</th><td>Roll one 8-sided die; subtract 2.</td><td>6 − 2 = 4</td></tr>
+            </tbody></table></div>
+            <p>Available dice: <strong>d4, d6, d8, d10, d12, d20, and d100</strong>. Each row uses one die type; add another row for a different type.</p>
+        </section>
+        <section id="luck" class="panel guide-section" aria-labelledby="luckHeading">
+            <p class="eyebrow">03 / A LITTLE EXTRA LUCK</p>
+            <h2 id="luckHeading">Higher rolls, with the odds in the open</h2>
+            <p>Fair gives every face an equal chance before roll modes apply. Other levels give each die a chance to roll a second candidate and <strong>keep the higher number</strong>.</p>
+            <div class="guide-table-wrap"><table class="guide-table"><caption>Luck comparison for one normal d20, without a modifier</caption><thead><tr><th scope="col">Luck level</th><th scope="col">Extra-candidate chance</th><th scope="col">Average result</th></tr></thead><tbody>
+                <tr><th scope="row">Fair</th><td>0%</td><td>10.50</td></tr>
+                <tr><th scope="row">Gentle</th><td>25%</td><td>11.33</td></tr>
+                <tr><th scope="row">Heroic</th><td>50%</td><td>12.16</td></tr>
+                <tr><th scope="row">Legendary</th><td>100%</td><td>13.83</td></tr>
+            </tbody></table></div>
+            <div class="guide-example"><span class="guide-example-label">WHEN LUCK ACTIVATES</span><p><strong>Candidate dice: 4 and 16 → keep 16.</strong></p><p>If both candidates are low, the kept result can still be low. Luck never guarantees success.</p></div>
+            <p>That percentage is the chance of an extra candidate for <strong>each die</strong>, not your chance to succeed. With three dice, luck is checked independently for all three.</p>
+            <p><strong>Legendary still allows natural 20s.</strong> Higher luck also increases their chance. This version does not turn 20 into 19. A total of 20 after a modifier is different from a natural 20 on the die.</p>
+            <div class="guide-callout"><strong>Agree on the house rule with your table.</strong><p>Luck changes the usual odds. Fair is selected on every fresh page load, so choose another level again when you return if your table uses it.</p></div>
+        </section>
+        <section id="modes" class="panel guide-section" aria-labelledby="modesHeading">
+            <p class="eyebrow">04 / CHOOSE A MODE</p>
+            <h2 id="modesHeading">Normal, advantage, or disadvantage</h2>
+            <dl class="guide-definitions">
+                <div><dt>Normal</dt><dd>Keep one result per die, after any luck candidates are compared.</dd></div>
+                <div><dt>Advantage</dt><dd>Create two results per die and keep the higher one.</dd></div>
+                <div><dt>Disadvantage</dt><dd>Create two results per die and keep the lower one.</dd></div>
+            </dl>
+            <p><strong>Luck happens first.</strong> Each of those two results can have its own extra luck candidate. Then the mode selects the higher or lower result.</p>
+            <div class="guide-example"><span class="guide-example-label">LUCK + DISADVANTAGE</span><p><strong>Group A: 4 and 16 → 16. Group B: 7 and 11 → 11.</strong></p><p>Disadvantage keeps the lower group result: <strong>11</strong>. With a +3 modifier, the total is 14.</p></div>
+            <p class="guide-fine">In this roller, modes apply to each die individually, including multi-die rows. Choosing advantage for 2d6 does not roll two whole 2d6 totals and keep the better total. Each row has its own mode; luck is shared across the tray.</p>
+        </section>
+        <section id="odds" class="panel guide-section" aria-labelledby="oddsHeading">
+            <p class="eyebrow">05 / KNOW YOUR CHANCES</p>
+            <h2 id="oddsHeading">Read the odds panel</h2>
+            <p>Choose a row in <strong>Odds for action</strong>. Rolling an action also selects it in the panel. The panel uses that row’s current settings and the current luck level.</p>
+            <dl class="guide-definitions">
+                <div><dt>Average die</dt><dd>The expected result of one die, before the modifier. It is a long-run average, not a promised roll or the average of a whole multi-die action.</dd></div>
+                <div><dt>Maximum face</dt><dd>The chance that one selected die result equals its highest face. For d20, this is the chance of 20 before modifiers.</dd></div>
+                <div><dt>Outcome bars</dt><dd>The relative chances of each face, from low to high. Taller bars mean more likely results. Hover a bar to see its face and percentage.</dd></div>
+                <div><dt>Target total (DC)</dt><dd>The chance that the entire action total meets or beats your target, including its dice count, modifier, mode, and luck level.</dd></div>
+            </dl>
+            <div class="guide-example"><span class="guide-example-label">FAIR · NORMAL · 1d20 + 5 · TARGET 15</span><p><strong>You need a die result of 10 or higher: a 55% chance.</strong></p><p>This is a numeric comparison. The roller does not apply automatic success or failure rules, critical damage, or character abilities.</p></div>
+        </section>
+        <section id="saved-data" class="panel guide-section" aria-labelledby="savedHeading">
+            <p class="eyebrow">06 / PICK UP WHERE YOU LEFT OFF</p>
+            <h2 id="savedHeading">What gets remembered?</h2>
+            <ul class="guide-list">
+                <li><strong>Action setups</strong> save as you edit them in this browser.</li>
+                <li><strong>The latest 30 rolls</strong> appear in “The story so far.” Clear history removes that list, while keeping your action setups.</li>
+                <li><strong>Your theme choice</strong> carries between the roller and this guide. Until you choose, the site follows your device’s light or dark setting.</li>
+            </ul>
+            <p>The current luck selection and target number reset on a fresh page load. Last-result displays in action rows also reset; recent totals remain in history.</p>
+            <p>Saved data stays in this browser on this website address. It does not sync between devices, browsers, or the old ChatGPT-hosted address. Clearing browser site data can remove it. If browser storage is unavailable, action setups and history may last only for your current visit.</p>
+            <p class="guide-fine">Roll details show candidates for the latest roll of each action during the current visit. History keeps totals and kept die values, not a full archive of every candidate.</p>
+            <a class="guide-cta" href="./">Ready to roll <span aria-hidden="true">↗</span></a>
+        </section>
+        <footer>HERO’S FORTUNE <span>Let the dice surprise you.</span><span>UNOFFICIAL TABLETOP TOOL · NOT AFFILIATED WITH D&D</span></footer>
+    </main>
+</body>
+</html>

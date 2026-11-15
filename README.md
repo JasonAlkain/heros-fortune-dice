@@ -4,6 +4,7 @@ A browser-based tabletop dice roller with transparent, optional luck settings. F
 
 ## Features
 
+- Beginner guide available from “How it works” beside the logo.
 - Named action rows with 1–10 dice, standard die types (d4 through d100), and a modifier applied once per action total.
 - Independent roll modes for each action: normal, advantage, or disadvantage.
 - Roll one action or all actions separately.
@@ -34,6 +35,7 @@ All site files live in `docs/`. `.nojekyll` disables unnecessary Jekyll processi
 ## Source layout
 
 - `docs/index.html` — interface and page structure.
+- `docs/how-it-works.html` — beginner guide to actions, dice, luck, odds, and saved data.
 - `docs/style.css` — responsive layout and styling.
 - `docs/theme.js` — early theme selection and the persistent theme toggle.
 - `docs/core.js` — randomness, dice selection, and probability calculations.
