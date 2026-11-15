@@ -7,7 +7,7 @@
   try {
     const saved = localStorage.getItem(key);
     if (saved === 'light' || saved === 'dark') preference = saved;
-  } catch {}
+  } catch { }
   function apply() {
     const dark = preference ? preference === 'dark' : !!system?.matches;
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
@@ -32,7 +32,7 @@
     if (!button) return;
     button.addEventListener('click', () => {
       preference = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      try { localStorage.setItem(key, preference); } catch {}
+      try { localStorage.setItem(key, preference); } catch { }
       apply();
     });
   }
