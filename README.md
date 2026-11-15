@@ -7,6 +7,7 @@ A browser-based tabletop dice roller with transparent, optional luck settings. F
 - Named action rows with 1–10 dice, standard die types (d4 through d100), and a modifier applied once per action total.
 - Independent roll modes for each action: normal, advantage, or disadvantage.
 - Roll one action or all actions separately.
+- Light and dark themes: follows your device setting until you choose a theme, then remembers that choice in this browser.
 - Adjustable luck: Fair (0%), Gentle (25%), Heroic (50%), and Legendary (100%). The percentage is the chance to roll a second candidate and keep the higher result, for each die before advantage or disadvantage.
 - Exact outcome probabilities and target-total chances for the selected action.
 - Candidate-die audit details and a recent roll history.
@@ -34,6 +35,7 @@ All site files live in `docs/`. `.nojekyll` disables unnecessary Jekyll processi
 
 - `docs/index.html` — interface and page structure.
 - `docs/style.css` — responsive layout and styling.
+- `docs/theme.js` — early theme selection and the persistent theme toggle.
 - `docs/core.js` — randomness, dice selection, and probability calculations.
 - `docs/app.js` — action management, odds display, roll history, and browser storage.
 
