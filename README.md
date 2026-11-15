@@ -51,3 +51,11 @@ There is no application backend, analytics, external font loading, or third-part
 Browser storage belongs to each website origin. Setups and history on the previous ChatGPT-hosted URL do not automatically move to the GitHub Pages URL.
 
 This is an unofficial tabletop tool, not affiliated with Dungeons & Dragons or Wizards of the Coast.
+
+## Copyright and permissions
+
+Copyright © 2026 Zach Aars. All rights reserved in copyrightable material owned by Zach Aars.
+
+No general open-source license is granted. Claims are limited to eligible owned contributions, including qualifying human authorship; they do not extend to purely AI-generated material lacking the required human authorship or other unprotectable elements. Existing permissions, legal exceptions, and rights under GitHub’s terms remain unaffected.
+
+You may use the live roller as provided for tabletop play. For reuse requiring permission, see [COPYRIGHT.md](COPYRIGHT.md) and the [published copyright notice](https://jasonalkain.github.io/heros-fortune-dice/copyright.html). This notice is not copyright registration or a registered-trademark claim.

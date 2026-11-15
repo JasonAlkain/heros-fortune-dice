@@ -1148,3 +1148,7 @@ a:focus-visible { outline: 2px solid var(--copper); outline-offset: 5px; border-
     .site-menu-links { left: auto; right: 0; }
     .footer-top { align-items: flex-start; flex-direction: column; }
 }
+
+.copyright-notice { margin: 18px 0 0; font-size: 11px; line-height: 1.7; color: var(--muted); letter-spacing: 0; }
+.copyright-notice a { color: var(--muted); text-underline-offset: 3px; }
+.copyright-notice a:hover { color: var(--ink); }
